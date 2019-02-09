@@ -1,15 +1,22 @@
 let Header = () => {
-    return <span>Design a header for your blog</span>
+    return <h1>Laurys Stormborn</h1>
 }
 let Article = () => {
-    return <span>Write and design your blog article</span>
+    return  <div>
+                <h3>The Time I Rode a Dragon</h3>
+                <p>I tried to sacrifice myself in a fire while holding a dragon egg<br/> but instead of dying a dragon hatched out. I did lose all<br />my hair but thats fine. When the dragon grew up I said<br /> "Can I have a ride bud?" and he screeched and then let me ride!</p>
+            </div>
 }
 let Footer = () => {
-    return <span>Design a footer for your blog</span>
+    return <footer>copyright 300 BTE</footer>
 }
 
 let Blog = () => {
-    return <span>Make this Component render the header, article, and footer</span>
+    return  <div>
+                <Header />
+                <Article />
+                <Footer />
+            </div>
 }
 
 
