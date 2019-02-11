@@ -1,9 +1,28 @@
 let ListGroupItem = () => {
-    return <span>Make this component render like a Bootstrap list group item: <a href="https://getbootstrap.com/docs/4.1/components/list-group/" target="_blank">https://goo.gl/images/mY5Qdv</a></span>
+    const style = {
+        borderBottom: "1px solid grey",
+        padding: "5px"
+    }
+    return  <li style={style}>List Group Item</li>
 }
 
 let ListGroup = () => {
-    return <span>Make this Component render a handful of ListGroupItems</span>
+    const style = {
+        width: "200px",
+        border: "1px solid grey",
+        borderRadius: "5px",
+        listStyleType: "none",
+        margin: "0",
+        padding: "0"
+    }
+    return  <ul style={style}>
+                <ListGroupItem/>
+                <ListGroupItem/>
+                <ListGroupItem/>
+                <ListGroupItem/>
+                <ListGroupItem/>
+                <ListGroupItem/>
+            </ul>
 }
 
 
